@@ -6,9 +6,10 @@
 <body>
     당신의 핸드폰 기종을 알아내겠습니다.
     <br>
+    <script src="ua-parser.min.js"></script>
     <script type="text/javascript">
-        var yourPhone = navigator.userAgent;
-        document.write(yourPhone);
+        var parser = new UAParser();
+        console.log(parser.getResult());
     </script>
 </body>
 </html>
