@@ -13,7 +13,21 @@
         console.log(parser.getResult());
 
         var result = parser.getResult();
+    </script>
+    <br><br>
+    당신은 <script type="text/javascript">
         document.write(result.device.model);
+    </script> 로 이 문서를 보고 계십니다. 정말 좋은
+    <script type="text/javascript">
+        var type = result.device.type;
+        if (type == 'mobile'){
+            document.write("핸드폰이군요.");
+        }
+        else {
+            if(result.os.name.includes('indows')){
+                document.write("컴퓨터군요.");
+            }
+        }
     </script>
 </body>
 </html>
