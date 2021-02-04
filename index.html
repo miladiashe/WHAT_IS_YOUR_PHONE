@@ -10,6 +10,10 @@
     <script type="text/javascript">
         var parser = new UAParser();
         console.log(parser.getResult());
+
+        var result = parser.getResult();
+        console.log(result.cpu.architecture);
+        document.write(result.cpu.architecture);
     </script>
 </body>
 </html>
